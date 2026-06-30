@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1a"/>
+      <stop offset="100%" stop-color="#0d1b2a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="60%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="320" fill="url(#bg)"/>
+  <rect width="1280" height="320" fill="url(#grid)" opacity="0.4"/>
+
+  <!-- Top accent line -->
+  <rect width="1280" height="3" fill="url(#accent)"/>
+
+  <!-- Glow orbs -->
+  <circle cx="180" cy="160" r="140" fill="#10b981" opacity="0.04"/>
+  <circle cx="1100" cy="160" r="110" fill="#06b6d4" opacity="0.05"/>
+
+  <!-- Football (left) -->
+  <g transform="translate(68, 72) scale(1.65)">
+    <circle cx="50" cy="50" r="46" fill="white" stroke="#1e293b" stroke-width="2.5"/>
+    <polygon points="50,28 63,37 58,52 42,52 37,37" fill="#0f172a"/>
+    <polygon points="50,7 61,15 58,28 42,28 39,15" fill="#0f172a"/>
+    <polygon points="72,18 80,31 72,40 63,37 61,23" fill="#0f172a"/>
+    <polygon points="76,58 72,72 60,76 52,66 58,52" fill="#0f172a"/>
+    <polygon points="24,58 42,52 48,66 40,76 28,72" fill="#0f172a"/>
+    <polygon points="28,18 39,23 37,37 28,40 20,31" fill="#0f172a"/>
+    <circle cx="50" cy="50" r="46" fill="none" stroke="#10b981" stroke-width="4" opacity="0.7"/>
+  </g>
+
+  <!-- Title -->
+  <text x="310" y="138" font-family="system-ui,-apple-system,sans-serif" font-weight="800"
+        font-size="76" fill="white" letter-spacing="-2">TuniGoal</text>
+
+  <!-- Accent underline -->
+  <rect x="310" y="150" width="390" height="3" rx="2" fill="url(#accent)"/>
+
+  <!-- Tagline -->
+  <text x="312" y="193" font-family="system-ui,sans-serif" font-size="21"
+        fill="#94a3b8" letter-spacing="0.2">End-to-end ELT pipeline · Tunisian Ligue Pro 1</text>
+
+  <!-- Tech badges row -->
+  <g transform="translate(312, 222)">
+    <rect width="104" height="32" rx="6" fill="#E25A1C" opacity="0.12"/>
+    <rect width="104" height="32" rx="6" fill="none" stroke="#E25A1C" stroke-width="1" opacity="0.5"/>
+    <text x="52" y="21" font-family="system-ui,sans-serif" font-size="13" fill="#E25A1C"
+          text-anchor="middle" font-weight="600">PySpark 3.5</text>
+
+    <rect x="116" width="110" height="32" rx="6" fill="#017CEE" opacity="0.12"/>
+    <rect x="116" width="110" height="32" rx="6" fill="none" stroke="#017CEE" stroke-width="1" opacity="0.5"/>
+    <text x="171" y="21" font-family="system-ui,sans-serif" font-size="13" fill="#017CEE"
+          text-anchor="middle" font-weight="600">Airflow 2.8</text>
+
+    <rect x="238" width="118" height="32" rx="6" fill="#336791" opacity="0.12"/>
+    <rect x="238" width="118" height="32" rx="6" fill="none" stroke="#336791" stroke-width="1" opacity="0.5"/>
+    <text x="297" y="21" font-family="system-ui,sans-serif" font-size="13" fill="#6fa8d0"
+          text-anchor="middle" font-weight="600">PostgreSQL 15</text>
+
+    <rect x="368" width="88" height="32" rx="6" fill="#009688" opacity="0.12"/>
+    <rect x="368" width="88" height="32" rx="6" fill="none" stroke="#009688" stroke-width="1" opacity="0.5"/>
+    <text x="412" y="21" font-family="system-ui,sans-serif" font-size="13" fill="#4db6ac"
+          text-anchor="middle" font-weight="600">FastAPI</text>
+
+    <rect x="468" width="84" height="32" rx="6" fill="#61DAFB" opacity="0.10"/>
+    <rect x="468" width="84" height="32" rx="6" fill="none" stroke="#61DAFB" stroke-width="1" opacity="0.35"/>
+    <text x="510" y="21" font-family="system-ui,sans-serif" font-size="13" fill="#61DAFB"
+          text-anchor="middle" font-weight="600">React 18</text>
+  </g>
+
+  <!-- Right stats -->
+  <g transform="translate(880, 88)">
+    <text x="0" y="0" font-family="system-ui,sans-serif" font-size="12" fill="#475569" letter-spacing="2.5">SEASON 2024/25</text>
+
+    <text x="0" y="58" font-family="system-ui,sans-serif" font-size="52" fill="#10b981"
+          font-weight="800" filter="url(#glow)">240</text>
+    <text x="0" y="80" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">Fixtures Ingested</text>
+
+    <text x="175" y="58" font-family="system-ui,sans-serif" font-size="52" fill="#06b6d4"
+          font-weight="800" filter="url(#glow)">16</text>
+    <text x="175" y="80" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">Clubs Tracked</text>
+
+    <text x="310" y="58" font-family="system-ui,sans-serif" font-size="52" fill="#8b5cf6"
+          font-weight="800" filter="url(#glow)">4</text>
+    <text x="310" y="80" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">Star Schema Tables</text>
+
+    <text x="0" y="128" font-family="system-ui,sans-serif" font-size="12" fill="#334155">
+      api-sports.io v3 · league=202 · @daily ingestion
+    </text>
+  </g>
+
+  <!-- Bottom accent line -->
+  <rect y="317" width="1280" height="3" fill="url(#accent)"/>
+</svg>

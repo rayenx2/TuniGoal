@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="64" height="64">
+  <!-- Classic black-and-white football with green accent -->
+  <circle cx="50" cy="50" r="46" fill="white" stroke="#1e293b" stroke-width="3"/>
+  <!-- Center pentagon (black) -->
+  <polygon points="50,28 63,37 58,52 42,52 37,37" fill="#0f172a"/>
+  <!-- Top patch -->
+  <polygon points="50,7 61,15 58,28 42,28 39,15" fill="#0f172a"/>
+  <!-- Top-right patch -->
+  <polygon points="72,18 80,31 72,40 63,37 61,23" fill="#0f172a"/>
+  <!-- Bottom-right patch -->
+  <polygon points="76,58 72,72 60,76 52,66 58,52" fill="#0f172a"/>
+  <!-- Bottom-left patch -->
+  <polygon points="24,58 42,52 48,66 40,76 28,72" fill="#0f172a"/>
+  <!-- Top-left patch -->
+  <polygon points="28,18 39,23 37,37 28,40 20,31" fill="#0f172a"/>
+  <!-- Green accent ring -->
+  <circle cx="50" cy="50" r="46" fill="none" stroke="#10b981" stroke-width="5" opacity="0.7"/>
+</svg>
